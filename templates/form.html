@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cotización</title>
+        <link rel="stylesheet" href="static/css/form.css">
+    </head>
+    <body>
+        <header>
+        </header>
+        <main class="container">
+            <h1>SOLICITA TU COTIZACION</h1>
+            <p>Completa el siguiente formulario para realizar tu cotización.</p>
+            <div>
+                <form class="formulario" id="formulario">
+                    <label>NOMBRE COMPLETO:</label><input type="text" placeholder="ingrese su nombre" id="nombre"><br><br>
+                    <label>TELEFONO:</label><input type="number" placeholder="ingrese su número de telefono" id="cel"><br><br>
+                    <label>CORREO:</label><input type="text" placeholder="ingrese su correo" id="email" ><br><br>
+                    <label>DIRECCION:</label><input type="text" placeholder="ingrese su dirección" id="direccion"><br><br>
+                <label>TIPO DE SERVICIO:</label>
+                <select required id="select">
+                    <option value=""> -----Selecciona una opción-----</option>
+                    <option value="Instalación">Instalación</option>
+                    <option value="Reparación">Reparación</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                </select><br><br>
+                <label>FECHA EN LA QUE SE LLEVARA A CABO EL SERVICIO:</label><input type="date" id="fecha" requiered>
+                <label>ELIGE EL TIPO DE MAQUINA:</label>
+                <select required id="select1">
+                    <option value=""> -----Selecciona una opción-----</option>
+                    <option value="Aire acondicionado tipo split">Aire acondicionado tipo split</option>
+                    <option value="Aire acondicionado de ventana">Aire acondicionado de ventana</option>
+                    <option value="Aire acondicionado de techo">Aire acondicionado de techo</option>
+                    <option value="Aire acondicionado tipo cassette">Aire acondicionado tipo cassette</option>
+                </select><br><br>
+                <label>COMENTARIOS ADICIONALES:</label>
+                <textarea placeholder="Comentarios" id="mensaje"></textarea><br><br>
+                <button id="boton" type="submit">Enviar formulario</button>
+                </form>
+        </main>        
+    </body>
+    <script src="static/js/script.js"></script>
+</html>
